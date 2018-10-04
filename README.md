@@ -12,4 +12,5 @@ For Frontend using angular 6 with CLI. Feature that is done in frontend:
 - Insert/Add new customer with cash deposit
 - View list of all customer
 
+Run npm install to install all package
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
