@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    Create New Cash Deposit Customer
+    <span class="app-toolbar-filler"></span>
+    <button mat-button (click)="save()">Save</button>
+</mat-toolbar>
+<div class="app-content">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Please fill the field</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <input mdInput placeholder="Customer Name" [(ngModel)]="customer.customer_name"/><br />
+            <input mdInput placeholder="Account Number" [(ngModel)]="customer.account_number"/><br />
+            <input mdInput type="number" placeholder="Cash Deposit" [(ngModel)]="customer.cash_deposit"/><br />
+        </mat-card-content>
+    </mat-card>
+</div>

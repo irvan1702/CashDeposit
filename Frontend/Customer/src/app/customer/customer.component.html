@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    Customer Deposit List
+    <span class="app-toolbar-filler"></span>
+    <button mat-button (click)="create()">New</button>
+</mat-toolbar>
+<div class="app-content">
+    <table style="width: 100%; margin-top: 10px; border-collapse: collapse">
+        <thead style="text-align: left">
+            <tr>
+                <th>Customer Name</th>
+                <th>Account Number</th>
+                <th>Cash Deposit</th>
+                 <th>Total Cash Deposit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customer of customers" style="border-top: 1px solid black">
+                <td>{{ customer.customer_name }}</td>
+                <td>{{ customer.account_number }}</td>
+                <td>{{ customer.cash_deposit }}</td>
+                <td>{{ customer.total_cash_deposit }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
